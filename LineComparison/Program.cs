@@ -13,11 +13,6 @@ namespace LineComparison
             UC1Line.Line();
             Console.ReadLine();
 
-            UC2EqualTo.EqualTo();
-            Console.ReadLine();
-
-            UC3GreaterThan.GreaterThan();
-            Console.ReadLine();
         }
     }
 }
