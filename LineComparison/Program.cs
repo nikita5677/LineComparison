@@ -10,7 +10,7 @@ namespace LineComparison
     {
         static void Main(string[] args)
         {
-            UC2EqualTo.EqualTo();
+            UC3GreaterThan.GreaterThan();
             Console.ReadLine();
         }
     }

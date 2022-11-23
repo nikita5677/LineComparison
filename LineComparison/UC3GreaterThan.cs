@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace LineComparison
 {
-    class UC2EqualTo
+    class UC3GreaterThan
     {
-        public static void EqualTo()
+        public static void GreaterThan()
         {
-            //Line 1
+            //For Line 1
             Console.WriteLine("Enter the X1 and X2 Coordinates: ");
             int X1 = Convert.ToInt32(Console.ReadLine());
             int X2 = Convert.ToInt32(Console.ReadLine());
@@ -21,7 +21,7 @@ namespace LineComparison
             Console.WriteLine("Length of Line is : " + Result1);
 
 
-            //Line 2
+            //For Line 2
             Console.WriteLine("Enter the A1 and A2 Coordinates: ");
             int A1 = Convert.ToInt32(Console.ReadLine());
             int A2 = Convert.ToInt32(Console.ReadLine());
@@ -31,9 +31,13 @@ namespace LineComparison
             double Result2 = Math.Sqrt(Math.Pow((A2 - A1), 2) + Math.Pow((B2 - B1), 2));
             Console.WriteLine("Length of Line is : " + Result2);
 
-            if (Result1 == Result2)
+            if (Result1 >= Result2)
             {
-                Console.WriteLine("Both the two lines are equal");
+                Console.WriteLine("The Line one is greater than or equal to Line two");
+            }
+            else
+            {
+                Console.WriteLine("The Line one is less than Line two");
             }
             Console.ReadLine();
         }
