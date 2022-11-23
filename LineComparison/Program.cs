@@ -10,9 +10,8 @@ namespace LineComparison
     {
         static void Main(string[] args)
         {
-            UC1Line.Line();
+            UC2EqualTo.EqualTo();
             Console.ReadLine();
-
         }
     }
 }
